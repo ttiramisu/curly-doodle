@@ -1,95 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="this website contains code for ur revision in the infocomm exam"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Infocomm</title>
-  </head>
 
-  <body>
-    <script>
-      window.onload = function () {
-        var userAgent = navigator.userAgent.toLowerCase();
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="this website contains code for ur revision in the infocomm exam">
+  <link rel="stylesheet" href="style.css" />
+  <title>Infocomm</title>
+</head>
 
-        if (userAgent.indexOf("thinkpad") !== -1) {
-          window.location.href = "https://www.google.com/";
-        }
-        if (userAgent.indexOf("dell") !== -1) {
-          window.location.href = "https://www.google.com/";
-        }
-      };
+<body>
+  <script>
+    window.onload = function () {
+      var userAgent = navigator.userAgent.toLowerCase();
 
-      if ("RTCPeerConnection" in window) {
-        const pc = new RTCPeerConnection();
-        pc.createDataChannel("");
-        pc.onicecandidate = (event) => {
-          const candidate = event.candidate;
-          if (candidate) {
-            const deviceName = candidate.relatedAddress.split(":")[0];
-            console.log("Device Name:", deviceName);
-
-            if (deviceName.includes("S") || deviceName.includes("2")) {
-              window.location.href = "https://www.google.com";
-            }
-          }
-        };
-        pc.createOffer()
-          .then((offer) => pc.setLocalDescription(offer))
-          .catch((error) => console.error(error));
-      } else {
-        console.error("WRTC exit error.");
+      if (userAgent.indexOf('thinkpad') !== -1) {
+        window.location.href = 'https://www.google.com/';
       }
-    </script>
-    <div class="container">
-      <div>
-        <h1>Avocado</h1>
-        <a href="calculator/aboutme.html" download>About me</a>
-        <a href="calculator/calc copy.html" download>Calc Copy</a>
-        <a href="calculator/calc v2 (1).html" download>Calc v2 (1)</a>
-        <a href="calculator/calc v2.html" download>Calc v2</a>
-        <a href="calculator/calc.html" download>Calc</a>
-        <a href="calculator/classlist2.html" download>Classlist</a>
-        <a href="calculator/heroes.html" download>Heroes</a>
-        <a href="calculator/links.html" download>Link</a>
-        <a href="calculator/pacman.html" download>Pacman</a>
-        <a href="calculator/pokemon.html" download>Pokemon</a>
-        <a href="calculator/pokemon2.html" download>Pokemon 2</a>
-        <a href="calculator/pokemon3.html" download>Pokemon 3</a>
-        <a href="calculator/position.html" download>Positioning</a>
-        <a href="calculator/positioning.html" download>Positioning 2</a>
-        <a href="calculator/positioning2.html" download>Positioning 3</a>
-        <a href="calculator/romans.html" download>Romans</a>
-        <a href="calculator/romans copy.html" download>Romans copy</a>
-        <a href="calculator/selectors.html" download>Selectors</a>
-        <a href="calculator/shape.html" download>Shape</a>
-        <a href="calculator/show_image.html" download>Show image</a>
-        <a href="calculator/show_image copy.html" download>Show image copy</a>
-        <a href="calculator/show_img2.html" download>Show image 2</a>
-        <a href="calculator/table.html" download>Table</a>
-      </div>
+      if (userAgent.indexOf('dell') !== -1) {
+        window.location.href = 'https://www.google.com/';
+      }
+    };
 
-      <div>
-        <h1>Mango</h1>
-        <a href="IF/calculator.html" download>calculator</a>
-        <a href="IF/calculator v2.0.html" download>Calculator v2</a>
-        <a href="IF/classlist.html" download>Classlist</a>
-        <a href="IF/heroes.html" download>Heroes</a>
-        <a href="IF/pacman.html" download>Pacman</a>
-        <a href="IF/pokemon.html" download>Pokemon</a>
-        <a href="IF/positioning.html" download>Positioning</a>
-        <a href="IF/show_image.html" download>Show Image</a>
-      </div>
-      <div>
-        <h1>Pineapple</h1>
-      </div>
+  </script>
+  <div class="container">
+    <div>
+      <h1>Apple</h1>
+      <a href="calculator/aboutme.html" download>About me</a>
+      <a href="calculator/calc copy.html" download>Calc Copy</a>
+      <a href="calculator/calc v2.html" download>Calc v2</a>
+      <a href="calculator/calc.html" download>Calc</a>
+      <a href="calculator/classlist2.html" download>Classlist</a>
+      <a href="calculator/heroes.html" download>Heroes</a>
+      <a href="calculator/links.html" download>Link</a>
+      <a href="calculator/pacman.html" download>Pacman</a>
+      <a href="calculator/pokemon.html" download>Pokemon</a>
+      <a href="calculator/pokemon2.html" download>Pokemon 2</a>
+      <a href="calculator/pokemon3.html" download>Pokemon 3</a>
+      <a href="calculator/positioning.html" download>Positioning</a>
+      <a href="calculator/positioning2.html" download>Positioning 2</a>
+      <a href="calculator/romans.html" download>Romans</a>
+      <a href="calculator/selectors.html" download>Selectors</a>
+      <a href="calculator/shape.html" download>Shape</a>
+      <a href="calculator/show_image.html" download>Show image</a>
+      <a href="calculator/show_image copy.html" download>Show image copy</a>
+      <a href="calculator/table.html" download>Table</a>
     </div>
-    <p>CKP sucks</p>
-    <script src="script.js"></script>
-  </body>
+
+    <div>
+      <h1>Mango</h1>
+      <a href="IF/calculator.html" download>Calculator</a>
+      <a href="IF/calculator v2.0.html" download>Calculator v2</a>
+      <a href="IF/classlist.html" download>Classlist</a>
+      <a href="IF/heroes.html" download>Heroes</a>
+      <a href="IF/pacman.html" download>Pacman</a>
+      <a href="IF/pokemon.html" download>Pokemon</a>
+      <a href="IF/positioning.html" download>Positioning</a>
+      <a href="IF/show_image.html" download>Show Image</a>
+    </div>
+    <div>
+      <h1>Pineapple</h1>
+      <a href="pineapple/aboutme.html" download>About Me</a>
+      <a href="pineapple/calc-v2.0.html" download>Calculator v2</a>
+      <a href="pineapple/calc.html" download>Calculator</a>
+      <a href="pineapple/classlist.html" download>Classlist</a>
+      <a href="pineapple/covid.html" download>Covid</a>
+      <a href="pineapple/heroes.html" download>Heores</a>
+      <a href="pineapple/links.html" download>Links</a>
+      <a href="pineapple/list.html" download>List</a>
+      <a href="pineapple/pokemon.html" download>Pokemon</a>
+      <a href="pineapple/pokemonv2.html" download>Pokemon</a>
+      <a href="pineapple/pokemonv3.html" download>Pokemon</a>
+      <a href="pineapple/position.html" download>Positioning</a>
+      <a href="pineapple/romans.html" download>Romans</a>
+      <a href="pineapple/selectors.html" download>Selectors</a>
+      <a href="pineapple/shape.html" download>Pacman</a>
+      <a href="pineapple/show_img.html" download>Show Image</a>
+      <a href="pineapple/table.html" download>Table</a>
+    </div>
+  </div>
+  <p>CKP sucks</p>
+  <script src="script.js"></script>
+</body>
+
 </html>

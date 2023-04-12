@@ -1,56 +1,70 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <style>
         body {
             font-family: 'Edu VIC WA NT Beginner', cursive;
         }
+
         th {
-          width: 200px;
+            width: 200px;
         }
-        td { 
-          width: 150px;
+
+        td {
+            width: 150px;
         }
+
         h1 {
             text-align: center;
             background-color: red;
             color: white;
         }
-        h2{
+
+        h2 {
             color: blue;
         }
-        p{
+
+        p {
             font-family: 'Edu VIC WA NT Beginner', cursive;
         }
+
         .hci-link:link {
             color: black;
             text-decoration: none;
         }
+
         .hci-link:visited {
             color: black;
             text-decoration: none;
         }
+
         .hci-link:hover {
             background-color: black;
             color: white;
             text-decoration: none;
         }
-        .rick:link{
+
+        .rick:link {
             color: black;
             text-decoration: none;
             cursor: default;
         }
+
         .rick:visited {
             color: black;
             text-decoration: none;
             cursor: default;
         }
+
         .name {
             text-decoration: overline;
         }
+
         .hidden {
             display: none;
         }
+
         .modal {
             position: absolute;
             top: 50%;
@@ -67,43 +81,66 @@
     </style>
     <title>About Me</title>
 </head>
+
 <body>
-    <center><h1>About Me</h1></center>
+    <center>
+        <h1>About Me</h1>
+    </center>
     <br>
-    <p>Hey guys, I am <b class="name">Lee Jun Wei</b>, 13, student of <a class="hci-link" href="http://www.hci.edu.sg">Hwa Chong Institution</a>. The table shows my biodata.</p>
+    <p>Hey guys, I am <b class="name">xxx</b>, 13, student of <a class="hci-link" href="http://www.hci.edu.sg">Hwa Chong
+            Institution</a>. The table shows my biodata.</p>
     <h2>Biodata</h2>
-    <table class="table"border="1" align="left" style="text-align: center;">
+    <table class="table" border="1" align="left" style="text-align: center;">
         <tr>
-            <b><th>Class</th></b><td>1O2</td><td rowspan="6"><img src="https://i.ibb.co/fdQ0JRM/a0cbb993-5837-45fa-8194-e1df24d204f3.jpg" width="150"></td>
+            <b>
+                <th>Class</th>
+            </b>
+            <td>1O2</td>
+            <td rowspan="6"><img src="#" width="150"></td>
         </tr>
         <tr>
-            <b><th>Index No.</th></b><td>21</th>
+            <b>
+                <th>Index No.</th>
+            </b>
+            <td>21</th>
         </tr>
         <tr>
-            <b><th>Age</th></b><td><a class="rick"href="https://c.tenor.com/yheo1GGu3FwAAAAC/rick-roll-rick-ashley.gif">13</a></td>
+            <b>
+                <th>Age</th>
+            </b>
+            <td><a class="rick" href="https://c.tenor.com/yheo1GGu3FwAAAAC/rick-roll-rick-ashley.gif">13</a></td>
         </tr>
         <tr>
-            <b><th>Horoscope</th></b><td>Capricorn</td>
+            <b>
+                <th>Horoscope</th>
+            </b>
+            <td>Capricorn</td>
         </tr>
         <tr>
-            <b><th>Weight</th></b><td>43kg</td>
+            <b>
+                <th>Weight</th>
+            </b>
+            <td>43kg</td>
         </tr>
         <tr>
-            <b><th>Height</th></b><td>164cm</td>
+            <b>
+                <th>Height</th>
+            </b>
+            <td>164cm</td>
         </tr>
     </table>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-        <p>My favourite food and beverages:</p>
+    <p>My favourite food and beverages:</p>
     <ul>
         <li>Steak</li>
         <li>Tea</li>
@@ -114,7 +151,7 @@
     <p>I am from Hong Wen School and I have spent 6 years in Hong Wen School.</p>
     <hr>
     <div class="modal hidden">
-        <img src="https://c.tenor.com/yheo1GGu3FwAAAAC/rick-roll-rick-ashley.gif"/>
+        <img src="https://c.tenor.com/yheo1GGu3FwAAAAC/rick-roll-rick-ashley.gif" />
     </div>
     <script>
         const modal = document.querySelector('.modal');
@@ -127,7 +164,7 @@
         }
 
         document.addEventListener('keydown', function (e) {
-        // console.log(e.key);
+            // console.log(e.key);
 
             if (e.key === 'Escape' && modal.classList.contains('hidden')) {
                 openModal();
@@ -141,4 +178,5 @@
         })
     </script>
 </body>
+
 </html>
