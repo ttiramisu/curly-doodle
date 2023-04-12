@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selectors</title>
+  <style>
+    html {
+      background-image: url('https://i.ibb.co/FYKHwZg/cosmic-timetraveler-SFhu-Mw-FClk-unsplash.jpg');
+      background-size: cover;
+      font-family: sans-serif;
+    }
+
+    .flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .column {
+      flex-direction: column;
+    }
+
+    .img {
+      margin: 10px;
+      height: 300px;
+    }
+
+    .border {
+      border-radius: 80px;
+    }
+
+    .book-cover {
+      height: 250px;
+      border: solid red 2px;
+    }
+
+    .book-section {
+      border-radius: 15px;
+      background-color: #4263eb;
+      padding: 30px;
+      padding-top: 5px;
+      width: 70%;
+    }
+
+    h2 {
+      font-weight: 400;
+    }
+  </style>
+</head>
+
+<body class="flex column">
+  <div class="flex column">
+    <div>
+      <h1>The Characters</h1>
+    </div>
+    <div>
+      <img src="#" alt="#" class="img">
+      <img src="#" alt="#" class="img">
+      <img src="#" alt="#" class="img border">
+      <img src="#" alt="#" class="img">
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <div class="flex column book-section">
+    <div>
+      <h1>Book covers</h1>
+    </div>
+    <div>
+      <img src="#" alt="#" class="img book-cover">
+      <img src="#" alt="#" class="img book-cover">
+      <img src="#" alt="#" class="img book-cover">
+      <img src="#" alt="#" class="img book-cover">
+      <img src="#" alt="#" class="img book-cover">
+    </div>
+  </div>
+  <h2>Done by Jin Zijie</h2>
+</body>
+
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <title>Pokemon</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 10px;
+      background: linear-gradient(0.25turn, #fcc2d7, #f783ac, #fcc2d7);
+      font-family: 'Rubik', sans-serif;
+    }
+
+    h1 {
+      margin-top: 2.8rem;
+      color: #ffe066;
+      text-transform: capitalize;
+      text-align: center;
+      font-size: 3.2rem;
+    }
+
+    p {
+      text-align: center;
+      display: block;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .grid {
+      margin-top: 5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      align-items: start;
+      justify-content: center;
+      column-gap: 1rem;
+      row-gap: 1.5rem;
+    }
+
+    .pok-box {
+      border: 0.2rem solid #000;
+      border-radius: 0.8rem;
+      background-color: #4c6ef5;
+      cursor: pointer;
+      transition: all 300ms;
+    }
+
+    .hidden {
+      visibility: hidden;
+      color: #fff;
+    }
+
+    .pok-box:hover {
+      transform: translateY(-1rem);
+    }
+
+    .pok-box:hover .hidden {
+      visibility: visible;
+      background-color: #74b816;
+    }
+
+    .pok-box:nth-child(20) {
+      border: 0.2rem solid #74b816;
+      background-color: #74b816;
+    }
+
+    .img {
+      width: 10rem;
+      border-radius: 0.8rem;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>pokemon - catch them all</h1>
+
+  <div class="flex">
+    <div class="grid">
+      <div class="pok-box">
+        <img src="https://i.ibb.co/VvQs3CL/bulbasaur.png" class="img">
+        <div class="hidden">
+          <p>1. Bulbasaur</p>
+        </div>
+      </div>
+      <div class="pok-box">
+        <img src="https://i.ibb.co/44nh2NS/ivysaur.png" class="img">
+        <div class="hidden">
+          <p>2. Ivysaur</p>
+        </div>
+      </div>
+      <div class="pok-box">
+        <img src="https://i.ibb.co/jf5m90g/venusaur.png" class="img">
+        <div class="hidden">
+          <p>3. Venusaur</p>
+        </div>
+      </div>
+      <div class="pok-box">
+        <img src="https://i.ibb.co/YTb82Fj/Charmander.png" class="img">
+        <div class="hidden">
+          <p>4. Charmander</p>
+        </div>
+      </div>
+      <div class="pok-box">
+        <img src="https://i.ibb.co/RvzqTx9/charmeleon.png" class="img">
+        <div class="hidden">
+          <p>5. Charmeleon</p>
+        </div>
+      </div>
+      <div class="pok-box">
+        <img src="https://i.ibb.co/3RVNMT7/charizard.png" class="img">
+        <div class="hidden">
+          <p>6. Charizard</p>
+        </div>
+      </div>
+      <div class="pok-box">
+        <img src="https://i.ibb.co/dD2kQ2L/squirtle.png" class="img">
+        <div class="hidden">
+          <p>7. Squirtle</p>
+        </div>
+      </div>
+      <div class="pok-box">
+        <img src="https://i.ibb.co/Q8tcJjW/wartotle.png" class="img">
+        <div class="hidden">
+          <p>8. Wartotle</p>
+        </div>
+      </div>
+      <div class="pok-box">
+        <img src="https://i.ibb.co/TrnHx0S/blastoise.png" class="img">
+        <div class="hidden">
+          <p>9. Blastoise</p>
+        </div>
+      </div>
+      <div class="pok-box">
+        <img src="https://i.ibb.co/2FfVC7G/caterpie.png" class="img">
+        <div class="hidden">
+          <p>10. Caterpie</p>
+        </div>
+      </div>
+
+      <!-- 2nd row -->
+      <div class="pok-box">
+        <img src="https://drive.google.com/thumbnail?id=1yGxbkMXTPXy3F9xrbOpYX5c9KuGmXT5S" class="img">
+        <div class="hidden">
+          <p>11. Metapod</p>
+        </div>
+      </div>
+      <div class="pok-box">
+        <img src="https://drive.google.com/thumbnail?id=1NOx1-EMoQvzhJg54GeIdPreWxCcK0oEd" class="img">
+        <div class="hidden">
+          <p>12.Butterfree</p>
+        </div>
+      </div>
+      <div class="pok-box">
+        <img src="https://drive.google.com/thumbnail?id=1y5otGJlat7pFHGPA7xAuGaklw30GJ2aK" class="img">
+        <div class="hidden">
+          <p>13.Weedle</p>
+        </div>
+      </div>
+      <div class="pok-box">
+        <img src="https://drive.google.com/thumbnail?id=15ygisgJX2pN3Zde4G2LM1AwcEY35yxs7" class="img">
+        <div class="hidden">
+          <p>14.Kakuna</p>
+        </div>
+      </div>
+      <div class="pok-box">
+        <img src="https://drive.google.com/thumbnail?id=1FqXeyeeKWp-BdaY94BhPG0bpGBBDDknw" class="img">
+        <div class="hidden">
+          <p>15.Beedrill</p>
+        </div>
+      </div>
+      <div class="pok-box">
+        <img src="https://drive.google.com/thumbnail?id=1aEgEISgDmS8htt19cqLhmHjfY5AhLf3b" class="img">
+        <div class="hidden">
+          <p>16.Pidgey</p>
+        </div>
+      </div>
+      <div class="pok-box">
+        <img src="https://drive.google.com/thumbnail?id=1sLLbNJ1MAlD3_CqNOCDlbHVeBHsfa50H" class="img">
+        <div class="hidden">
+          <p>17.Pidgeotto</p>
+        </div>
+      </div>
+      <div class="pok-box">
+        <img src="https://drive.google.com/thumbnail?id=1TV7cL7g2hl8DdDw20tNL0agPWUzF14Q5" class="img">
+        <div class="hidden">
+          <p>18.Pidgeot</p>
+        </div>
+      </div>
+      <div class="pok-box">
+        <img src="https://drive.google.com/thumbnail?id=1qYG6sV2i84c9xzyVd2M4e1sJrW0B7JYQ" class="img">
+        <div class="hidden">
+          <p>19.Rattata</p>
+        </div>
+      </div>
+      <div class="pok-box">
+        <img src="https://drive.google.com/thumbnail?id=1EtmMB4cyvTH8KWTMgzSalWsskiZN8UOU" class="img">
+        <div class="hidden">
+          <p>20.Raticate</p>
+        </div>
+      </div>
+
+      <!-- 3rd row -->
+      <div class="pok-box">
+        <img src="https://drive.google.com/thumbnail?id=1m12mcI41rQmZZhntAkOnhoQArs58WYNh" class="img">
+        <div class="hidden">
+          <p>21.Spearow</p>
+        </div>
+      </div>
+      <div class="pok-box">
+        <img src="https://drive.google.com/thumbnail?id=1NbOn6gv9PI6XFCrIMog8YmK3qvGWB_yZ" class="img">
+        <div class="hidden">
+          <p>22.Fearow</p>
+        </div>
+      </div>
+      <div class="pok-box">
+        <img src="https://drive.google.com/thumbnail?id=1QXtP1FKG_xiWlTPk_KDD2P-u-Bw5oitl" class="img">
+        <div class="hidden">
+          <p>23.Ekans</p>
+        </div>
+      </div>
+      <div class="pok-box">
+        <img src="https://drive.google.com/thumbnail?id=1vkCXuSCRqMwjdKUEtGduD5xUtm0eexwx" class="img">
+        <div class="hidden">
+          <p>24.Arbok</p>
+        </div>
+      </div>
+      <div class="pok-box">
+        <img src="https://drive.google.com/thumbnail?id=1019HDbFbrcAaZq0Ov7t5sKkaqwOkp20q" class="img">
+        <div class="hidden">
+          <p>25.Pikachu</p>
+        </div>
+      </div>
+      <div class="pok-box">
+        <img src="https://drive.google.com/thumbnail?id=1KbQmiJ42h3xQAjfWaPRcuf5O1pDmE1oS" class="img">
+        <div class="hidden">
+          <p>26.Raichu</p>
+        </div>
+      </div>
+      <div class="pok-box">
+        <img src="https://drive.google.com/thumbnail?id=1auHteGsvnhf_NZnRY3fW324ngIcTdyE5" class="img">
+        <div class="hidden">
+          <p>27.Sandshrew</p>
+        </div>
+      </div>
+      <div class="pok-box">
+        <img src="https://drive.google.com/thumbnail?id=18t35SrL4403h_ufMxKdWhsXoC0_nhMNQ" class="img">
+        <div class="hidden">
+          <p>28.Sandslash</p>
+        </div>
+      </div>
+      <div class="pok-box">
+        <img src="https://drive.google.com/thumbnail?id=1PXck60SXzfGAGUCmHqIy9QwIcwTIxu2N" class="img">
+        <div class="hidden">
+          <p>29.Nidoran</p>
+        </div>
+      </div>
+      <div class="pok-box">
+        <img src="https://drive.google.com/thumbnail?id=1Ms34IGwHdQk5kp_zu48q5nunY3aqz0fd" class="img">
+        <div class="hidden">
+          <p>30.Nidorina</p>
+        </div>
+      </div>
+
+      <!-- 4th row -->
+      <div class="pok-box">
+        <img src="https://drive.google.com/thumbnail?id=12Pv5ThbUC7c8H-8ZqXQVlPmIrR0z1eYg" class="img">
+        <div class="hidden">
+          <p>31.Nidoqueen</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

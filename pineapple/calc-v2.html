@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calc V2.0</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-size: 10px;
+      font-family: 'Rubik', sans-serif;
+    }
+
+    html {
+      background-image: linear-gradient(0.25turn, #495057, #adb5bd, #343a40);
+    }
+
+    h1 {
+      font-size: 5.2rem;
+      text-align: center;
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+    }
+
+    h3 {
+      margin-top: 5rem;
+      font-size: 2.4rem;
+    }
+
+    .flex {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .column {
+      flex-direction: column;
+    }
+
+    input {
+      margin-bottom: 2rem;
+      border: 1px solid white;
+      border-radius: 8px;
+    }
+
+    label {
+      display: inline-block;
+      margin-right: 1.5rem;
+    }
+
+    .input-field {
+      font-size: 2.4rem;
+    }
+
+    button {
+      background-color: #f1f3f5;
+      color: #343a40;
+      margin-bottom: 2rem;
+      margin-right: 1rem;
+      border-radius: 8px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    button:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+
+    span {
+      display: inline-block;
+      margin: 1rem 2rem;
+      font-size: 2.5rem;
+      font-family: math;
+    }
+
+    sup {
+      font-size: 1.5rem;
+      font-family: math;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Calculator v2.0</h1>
+  <div class="flex form-container">
+    <form>
+      <div class="flex column">
+        <div>
+          <!-- OUTPUT -->
+          <label for="output" class="input-field">Result</label>
+          <br><br>
+          <input type="text" name="output" id="output" class="input-field" placeholder="  Result">
+          <!-- OUTPUT -->
+          <br><br><br>
+        </div>
+        <div class="flex">
+          <!-- BTN 1 -->
+          <button class="btn" onclick="displayAnswerPower(event)">
+            <i><span>x <sup> y</sup></span></i>
+          </button>
+
+          <!-- BTN 2 -->
+          <button class="btn" onclick="displayAnswerPower2(event)">
+            <i><span>x <sup> 1/y</sup></span></i>
+          </button>
+          <br>
+          <!-- BTN 3 -->
+          <button class="btn" onclick="displayAnswerSqrt2(event)">
+            <i><span>(x <sup> 2</sup> + y <sup> 2</sup>) <sup> 1/2</sup></span></i>
+          </button>
+
+          <!-- BTN 4 -->
+          <button class="btn" onclick="tangentAnswer(event)">
+            <i><span>tan <sup> -1</sup>(y &frasl; x)</span></i>
+          </button>
+        </div>
+
+        <div>
+          <br><br><br>
+          <!-- X -->
+          <label for="X" class="input-field">X</label><br><br>
+          <input type="number" name="X" id="valueX" class="input-field" placeholder="  Input for x value">
+          <!-- X -->
+          <br>
+          <!-- Y -->
+          <label for="Y" class="input-field">Y</label><br><br>
+          <input type="number" name="Y" id="valueY" class="input-field" placeholder="  Input for y value">
+          <!-- Y -->
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <h3 class="flex">Done By Jin Zijie</h3>
+  <script>
+
+    // POWER OF X Y
+    const powerOfXy = (x, y) => {
+      return Math.pow(x, y)
+    }
+
+    const displayAnswerPower = (event) => {
+      event.preventDefault();
+      const x = parseInt(document.getElementById('valueX').value);
+      const y = parseInt(document.getElementById('valueY').value);
+
+      const powerResult = powerOfXy(x, y)
+
+      document.getElementById('output').value = powerResult;
+    }
+
+    // POWER OF X 1/Y
+    const powerOfX1y = (x, y) => {
+      return Math.pow(x, 1 / y)
+    }
+
+    const displayAnswerPower2 = (event) => {
+      event.preventDefault();
+      const x = parseInt(document.getElementById('valueX').value);
+      const y = parseInt(document.getElementById('valueY').value);
+
+      const powerResult = powerOfX1y(x, y)
+
+      document.getElementById('output').value = powerResult;
+    }
+
+    // POWER OF (X^2 + Y^2)^1/2
+    const powerOfXandYSqrt2 = (x, y) => {
+      return Math.hypot(x, y)
+    }
+
+    const displayAnswerSqrt2 = (event) => {
+      event.preventDefault();
+      const x = parseInt(document.getElementById('valueX').value);
+      const y = parseInt(document.getElementById('valueY').value);
+
+      const powerResult = powerOfXandYSqrt2(x, y)
+
+      document.getElementById('output').value = powerResult;
+    }
+
+    // THE EQUATION WITH TANGENT
+    const tangent = (x, y) => {
+      return Math.atan(y / x) * 180 / Math.PI
+    }
+
+    const tangentAnswer = (event) => {
+      event.preventDefault();
+      const x = parseInt(document.getElementById('valueX').value);
+      const y = parseInt(document.getElementById('valueY').value);
+
+      const powerResult = tangent(x, y)
+
+      document.getElementById('output').value = powerResult;
+    }
+  </script>
+</body>
+
+</html>

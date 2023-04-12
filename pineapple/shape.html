@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shape</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      position: relative;
+      font-family: sans-serif;
+    }
+    
+    .body {
+      margin-top: 50px;
+      margin-left: 50px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border-style: solid;
+      border-width: 100px;
+      border-color: transparent;
+      border-bottom-color: red;
+      border-left-color: red;
+      border-top-color: red;
+    }
+
+    .body::before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: blue;
+      top: 80px;
+      left: 145px;
+    }
+
+    .body::after {
+      content: 'Jin Zijie';
+      display: inline-block;
+      transform: rotate(-90deg);
+      color: black;
+      position: absolute;
+      top: 130px;
+      left: 165px;
+      font-size: 32px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="body"></div>
+</body>
+
+</html>
