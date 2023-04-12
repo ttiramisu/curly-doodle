@@ -1,4 +1,4 @@
-h1, a{
+h1, a, p{
     color: white;
 }
 
@@ -24,4 +24,8 @@ body {
 	 font-family: 'Anton', sans-serif;
 	 justify-content: center;
 	 align-items: center;
+}
+
+p {
+    display: hidden;
 }
