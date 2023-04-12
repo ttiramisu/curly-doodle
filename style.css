@@ -4,3 +4,9 @@ a {
     text-decoration: none;
     color: black;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: 3 1fr;
+    grid-template-rows: auto;
+}
