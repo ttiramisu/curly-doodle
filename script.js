@@ -1,7 +1,7 @@
 'use strict'
 
 let keys = [];
-const konamiCode = ['ControlLeft', '1', '2', '3'];
+const konamiCode = ['Ctrl','left', '1', '2', '3'];
 
 window.addEventListener('keydown', (e) => {
   keys.push(e.key);
