@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Rancho&display=swap');
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  /*background-color: #2196F3;
+  padding: 10px;*/
+}
+.grid-item {
+  background-color: white;
+  /*border: 10px solid rgba(0, 0, 0, 0.8);*/
+  border: 10px solid white;
+  font-size: 25px;
+  text-align: center;
+}
+img {
+ border-radius: 50%;
+ aspect-ratio:1/1;
+ width:100%;
+ object-position : center top;
+ object-fit: cover;
+}
+img:hover {
+ transition : transform 1s ease-in-out;
+ box-sizing: border-box;
+ max-width: 100%;
+ transform: rotate(45deg);
+ /*not sure if needed*/
+ outline-style: solid;
+ outline-color: red;
+}
+div > p:first-letter {
+  float: left;
+  font-size: 70px;  
+  color:red;
+text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+}
+div > p:first-line{
+  font-weight: bold;
+}
+div > p{
+  text-align: left;
+  font-weight: lighter;
+  font-family: 'Rancho', cursive;
+
+}
+footer {
+  background-color:black;
+  color:white;
+  text-align: center;
+  padding:15px;
+}
+h1 {
+  background-color:black;
+  color:red;
+  text-align: center;
+  padding:20px;
+  font-family: 'Rancho', cursive;
+	-webkit-text-stroke: 0.2px white;
+
+}
+
+</style>
+</head>
+<body>
+<h1>DC SUPERHEROES</h1>
+<div class="grid-container">
+
+
+
+  <div class="grid-item"><img src="https://i.ibb.co/bsnXPkZ/superman.png" width="100%">
+<p><span>S</span>uperman was born on the fictional planet Krypton and was named Kal-El. As a baby, his parents sent him to Earth in a small spaceship moments before Krypton was destroyed in a natural cataclysm. His ship landed in the American countryside, near the fictional town of Smallville. He was found and adopted by farmers Jonathan and Martha Kent, who named him Clark Kent. Clark developed various superhuman abilities, such as incredible strength and impervious skin.</p></div>
+  <div class="grid-item"><img src="https://i.ibb.co/R2qdH64/batman.png" width="100%">
+<p><span>B</span>ruce Wayne and his parents were robbed by a thief brandishing a pistol as they exited a Gotham City movie house after a nighttime show. The panicky gunman murdered the adult Waynes as their horrified son watched. After years of training his mind and body to perfection - Bruce, having inherited his father's millions - mulled over a crime-fighting disguise that would terrorize lawbreakers. A bat flapping through an open window was deemed an omen, and the original tale's end caption heralded, "And thus is born this weird avenger of the dark...this avenger of evil. The Batman."</p></div>
+  <div class="grid-item"><img src="https://i.ibb.co/CsTLg4M/wonder-woman.png" width="100%">
+<p><span>W</span>onder Woman is an Amazon, a race of female warriors in Greek mythology. Her powers include superhuman strength and speed as well as the ability to fly. Steve Trevor, U.S. Air Force pilot's plane crashes on the uncharted Paradise Island, home of the legendary Amazons. The raven-haired Princess Diana finds Trevor, and the Amazons nurse him back to health. Diana takes Trevor back to the United States in her invisible plane, and she adopts the secret identity of Diana Prince.</p></div>  
+  <div class="grid-item"><img src="https://i.ibb.co/Hrsh0bN/dr-strange.png" width="100%">
+<p><span>D</span>octor Strange was a comic unlike any other. As Sorcerer Supreme of Earth, the hero traveled to other dimensions and fought unique villains such as Nightmare, Eternity, and the dread Dormammu. In his origin story, vain, egotistical neurosurgeon Stephen Strange injures his hands in a car crash. Attempts to heal his hands using science and medicine fail, and a desperate Strange travels to Tibet to find the fabled "Ancient One", who he hopes will restore him to health. On finding the old sage, Strange becomes his acolyte and a "Master of the Mystic Arts".
+</p></div>
+  <div class="grid-item"><img src="https://i.ibb.co/pr5xLDD/hellboy.png" width="100%">
+<p><span>H</span>ellboy was born in Hell to a human mother, his true name is Anung Un Rama. He is a large, muscular, red-skinned demon with a gigantic indestructible right hand. The infant Hellboy was summoned to Earth by the resurrected Grigory Rasputin and a cabal of Nazi mystics in December 1944. The summoning ceremony was interrupted by Allied troops, and Hellboy was found and adopted by British parapsychologist Trevor Bruttenholm. Hellboy was raised by Bruttenholm to be a force for good, but his constant struggle against his demonic nature became a feature.
+</p></div>
+
+
+</div>
+<footer><i>Reference : https://www.britannica.com/topic/Doctor-Strange-fictional-character</i></footer>
+
+</body>
+</html>
+
+

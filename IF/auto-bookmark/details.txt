@@ -1,0 +1,2 @@
+Extension: C:\Users\T0990572Z\Desktop\auto-bookmark.crx
+Key File: C:\Users\T0990572Z\Desktop\auto-bookmark.pem
