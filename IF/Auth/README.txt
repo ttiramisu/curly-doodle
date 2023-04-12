@@ -1,1 +1,0 @@
-C:\Users\T0990572Z\AppData\Local\Google\Chrome\User Data\Profile 9\Extensions
