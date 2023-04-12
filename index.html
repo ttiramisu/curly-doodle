@@ -8,16 +8,21 @@
     <link rel="stylesheet" href="style.css" />
     <title>Infocomm</title>
   </head>
-<script>
-var userAgent = navigator.userAgent.toLowerCase();
-if (userAgent.indexOf('thinkpad') !== -1) {
-  window.location.href = 'https://www.google.com/';
-}
-if (userAgent.indexOf('Dell') !== -1) {
-  window.location.href = 'https://www.google.com/';
-}
-  </script>
+
   <body>
+    <script>
+window.onload = function() {
+  var userAgent = navigator.userAgent.toLowerCase();
+
+  if (userAgent.indexOf('thinkpad') !== -1) {
+    window.location.href = 'https://www.google.com/';
+  }
+  if (userAgent.indexOf('dell') !== -1) {
+    window.location.href = 'https://www.google.com/';
+  }
+};
+
+  </script>
     <div class="container">
       <div>
         <h1>Apple</h1>
