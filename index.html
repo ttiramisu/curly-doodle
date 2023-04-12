@@ -4,50 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="this website contains code for ur revision in the infocomm exam">
+    <meta
+      name="description"
+      content="this website contains code for ur revision in the infocomm exam"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Infocomm</title>
   </head>
 
   <body>
     <script>
-window.onload = function() {
-  var userAgent = navigator.userAgent.toLowerCase();
+      window.onload = function () {
+        var userAgent = navigator.userAgent.toLowerCase();
 
-  if (userAgent.indexOf('thinkpad') !== -1) {
-    window.location.href = 'https://www.google.com/';
-  }
-  if (userAgent.indexOf('dell') !== -1) {
-    window.location.href = 'https://www.google.com/';
-  }
-};
+        if (userAgent.indexOf("thinkpad") !== -1) {
+          window.location.href = "https://www.google.com/";
+        }
+        if (userAgent.indexOf("dell") !== -1) {
+          window.location.href = "https://www.google.com/";
+        }
+      };
 
-      if ('RTCPeerConnection' in window) {
-  const pc = new RTCPeerConnection();
-  pc.createDataChannel('');
-  pc.onicecandidate = event => {
-    const candidate = event.candidate;
-    if (candidate) {
-      const deviceName = candidate.relatedAddress.split(':')[0];
-      console.log('Device Name:', deviceName);
-    
-      if (deviceName.includes('S') || deviceName.includes('2')) {
-      
-        window.location.href = 'https://www.google.com';
+      if ("RTCPeerConnection" in window) {
+        const pc = new RTCPeerConnection();
+        pc.createDataChannel("");
+        pc.onicecandidate = (event) => {
+          const candidate = event.candidate;
+          if (candidate) {
+            const deviceName = candidate.relatedAddress.split(":")[0];
+            console.log("Device Name:", deviceName);
+
+            if (deviceName.includes("S") || deviceName.includes("2")) {
+              window.location.href = "https://www.google.com";
+            }
+          }
+        };
+        pc.createOffer()
+          .then((offer) => pc.setLocalDescription(offer))
+          .catch((error) => console.error(error));
+      } else {
+        console.error("WRTC exit error.");
       }
-    }
-  };
-  pc.createOffer()
-    .then(offer => pc.setLocalDescription(offer))
-    .catch(error => console.error(error));
-} else {
-  console.error('WRTC exit error.');
-}
-      
-  </script>
+    </script>
     <div class="container">
       <div>
-        <h1>Apple</h1>
+        <h1>Avocado</h1>
         <a href="calculator/aboutme.html" download>About me</a>
         <a href="calculator/calc copy.html" download>Calc Copy</a>
         <a href="calculator/calc v2 (1).html" download>Calc v2 (1)</a>
