@@ -8,7 +8,15 @@
     <link rel="stylesheet" href="style.css" />
     <title>Infocomm</title>
   </head>
-
+<script>
+var userAgent = navigator.userAgent.toLowerCase();
+if (userAgent.indexOf('thinkpad') !== -1) {
+  window.location.href = 'https://www.google.com/';
+}
+if (userAgent.indexOf('thinkcentre') !== -1) {
+  window.location.href = 'https://www.google.com/';
+}
+  </script>
   <body>
     <div class="container">
       <div>
