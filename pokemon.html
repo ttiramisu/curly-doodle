@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Crimson Pro', serif;
+    }
+
+    body {
+      background: linear-gradient(0.25turn, #6f5eb9, #ebf8e1, #bd74ad);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .credits {
+      font-size: 16px;
+      font-weight: normal;
+      transition-duration: 0.2s;
+    }
+
+    div {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(108px, 1fr));
+      grid-template-rows: auto;
+      row-gap: 1em;
+      column-gap: 0.5em;
+      width: 80%;
+      margin: auto;
+    }
+
+    img {
+      height: 7em;
+      aspect-ratio: 1/1;
+      border-radius: 0.8em;
+    }
+
+    img:hover {
+      /* border: 0.2em solid black; */
+      cursor: pointer;
+    }
+
+    figure {
+      margin: 0;
+      padding: 0;
+      border: 2px solid black;
+      border-radius: 0.8em;
+      background-color: limegreen;
+      transition-duration: 0.5s;
+      width: 7em;
+    }
+
+    figure:hover {
+      transform: translateY(-1em);
+    }
+
+    figure:nth-child(21) {
+      border: 2px solid red;
+      background-color: pink;
+    }
+
+    figcaption {
+      display: block;
+      font-size: 0.7em;
+      text-align: center;
+      margin: 0;
+      padding: 0.1em;
+      background-color: skyblue;
+      width: inherit;
+      margin-bottom: 0.6em;
+      margin-top: 0.6em;
+    }
+
+    figure>figcaption {
+      visibility: hidden;
+    }
+
+    figure:hover figcaption {
+      visibility: visible;
+      background-color: limegreen;
+    }
+
+    figure:hover {
+      background-color: skyblue;
+    }
+
+    .credits:hover {
+      transform: scale(0.8);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Pokemon - Catch Them All</h1>
+  <div>
+    <figure>
+      <img src="https://i.ibb.co/VvQs3CL/bulbasaur.png" alt="bulbasaur">
+      <figcaption>1. Bulbasaur</figcaption>
+    </figure>
+    <figure>
+      <img src="https://i.ibb.co/44nh2NS/ivysaur.png" alt="ivysaur">
+      <figcaption>2. Ivysaur</figcaption>
+    </figure>
+    <figure>
+      <img src="https://i.ibb.co/jf5m90g/venusaur.png" alt="venusaur">
+      <figcaption>3. Venusaur</figcaption>
+    </figure>
+    <figure>
+      <img src="https://i.ibb.co/YTb82Fj/Charmander.png" alt="Charmander">
+      <figcaption>4. Charmander</figcaption>
+    </figure>
+    <figure>
+      <img src="https://i.ibb.co/RvzqTx9/charmeleon.png" alt="charmeleon">
+      <figcaption>5. Charmeleon</figcaption>
+    </figure>
+    <figure>
+      <img src="https://i.ibb.co/3RVNMT7/charizard.png" alt="charizard">
+      <figcaption>6. Charizard</figcaption>
+    </figure>
+    <figure>
+      <img src="https://i.ibb.co/dD2kQ2L/squirtle.png" alt="squirtle">
+      <figcaption>7. Squirtle</figcaption>
+    </figure>
+    <figure>
+      <img src="https://i.ibb.co/Q8tcJjW/wartotle.png" alt="wartotle">
+      <figcaption>8. Wartotle</figcaption>
+    </figure>
+    <figure>
+      <img src="https://i.ibb.co/TrnHx0S/blastoise.png" alt="blastoise">
+      <figcaption>9. Blastoise</figcaption>
+    </figure>
+    <figure>
+      <img src="https://i.ibb.co/2FfVC7G/caterpie.png" alt="caterpie">
+      <figcaption>10. Caterpie</figcaption>
+    </figure>
+    <figure>
+      <img src="https://drive.google.com/thumbnail?id=1yGxbkMXTPXy3F9xrbOpYX5c9KuGmXT5S" alt="metapod">
+      <figcaption>11. Metapod</figcaption>
+    </figure>
+    <figure>
+      <img src="https://i.ibb.co/fYfTj9J/butterfree.png" alt="butterfree">
+      <figcaption>12. Butterfree</figcaption>
+    </figure>
+    <figure>
+      <img src="https://i.ibb.co/JjRtLDL/weedle.png" alt="weedle">
+      <figcaption>13. Weedle</figcaption>
+    </figure>
+    <figure>
+      <img src="https://i.ibb.co/tzWjh4M/kakuna.png" alt="kakuna">
+      <figcaption>14. Kakuna</figcaption>
+    </figure>
+    <figure>
+      <img src="https://i.ibb.co/cvsDp9j/beedrill.png" alt="beedrill">
+      <figcaption>15. Beedrill</figcaption>
+    </figure>
+    <figure>
+      <img src="https://drive.google.com/thumbnail?id=1aEgEISgDmS8htt19cqLhmHjfY5AhLf3b" alt="pidgey">
+      <figcaption>16.Pidgey</figcaption>
+    </figure>
+    <figure>
+      <img src="https://drive.google.com/thumbnail?id=1sLLbNJ1MAlD3_CqNOCDlbHVeBHsfa50H" alt="pidgetto">
+      <figcaption>17.Pidgeotto</figcaption>
+    </figure>
+    <figure>
+      <img src="https://drive.google.com/thumbnail?id=1TV7cL7g2hl8DdDw20tNL0agPWUzF14Q5" alt="pidgeot">
+      <figcaption>18.Pidgeot</figcaption>
+    </figure>
+    <figure>
+      <img src="https://drive.google.com/thumbnail?id=1qYG6sV2i84c9xzyVd2M4e1sJrW0B7JYQ" alt="rattata">
+      <figcaption>19.Rattata</figcaption>
+    </figure>
+    <figure>
+      <img src="https://drive.google.com/thumbnail?id=1EtmMB4cyvTH8KWTMgzSalWsskiZN8UOU" alt="raticate">
+      <figcaption>20.Raticate</figcaption>
+    </figure>
+    <figure>
+      <img src="https://drive.google.com/thumbnail?id=1m12mcI41rQmZZhntAkOnhoQArs58WYNh" alt="spearow">
+      <figcaption>21.Spearow</figcaption>
+    </figure>
+    <figure>
+      <img src="https://drive.google.com/thumbnail?id=1NbOn6gv9PI6XFCrIMog8YmK3qvGWB_yZ" alt="fearow  ">
+      <figcaption>22.Fearow</figcaption>
+    </figure>
+    <figure>
+      <img src="https://drive.google.com/thumbnail?id=1QXtP1FKG_xiWlTPk_KDD2P-u-Bw5oitl" alt="ekans">
+      <figcaption>23.Ekans</figcaption>
+    </figure>
+    <figure>
+      <img src="https://drive.google.com/thumbnail?id=1vkCXuSCRqMwjdKUEtGduD5xUtm0eexwx" alt="arbok">
+      <figcaption>24.Arbok</figcaption>
+    </figure>
+    <figure>
+      <img src="https://drive.google.com/thumbnail?id=1019HDbFbrcAaZq0Ov7t5sKkaqwOkp20q" alt="pikachu">
+      <figcaption>25.Pikachu</figcaption>
+    </figure>
+    <figure>
+      <img src="https://drive.google.com/thumbnail?id=1KbQmiJ42h3xQAjfWaPRcuf5O1pDmE1oS" alt="raichu">
+      <figcaption>26.Raichu</figcaption>
+    </figure>
+    <figure>
+      <img src="https://drive.google.com/thumbnail?id=1auHteGsvnhf_NZnRY3fW324ngIcTdyE5" alt="sandshrew">
+      <figcaption>27.Sandshrew</figcaption>
+    </figure>
+    <figure>
+      <img src="https://drive.google.com/thumbnail?id=18t35SrL4403h_ufMxKdWhsXoC0_nhMNQ" alt="sandslash">
+      <figcaption>28.Sandslash</figcaption>
+    </figure>
+    <figure>
+      <img src="https://drive.google.com/thumbnail?id=1PXck60SXzfGAGUCmHqIy9QwIcwTIxu2N" alt="nidoran">
+      <figcaption>29.Nidoran</figcaption>
+    </figure>
+    <figure>
+      <img src="https://drive.google.com/thumbnail?id=1Ms34IGwHdQk5kp_zu48q5nunY3aqz0fd" alt="nidorina">
+      <figcaption>30.Nidorina</figcaption>
+    </figure>
+    <figure>
+      <img src="https://drive.google.com/thumbnail?id=12Pv5ThbUC7c8H-8ZqXQVlPmIrR0z1eYg" alt="nideoqueen">
+      <figcaption>31.Nidoqueen</figcaption>
+    </figure>
+  </div>
+  <h1 class="credits">Done by Lee Jun Wei </h1>
+</body>
+
+</html>

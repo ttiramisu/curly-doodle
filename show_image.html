@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show Image</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Crimson Pro', serif;
+    }
+
+    body {
+      background: linear-gradient(0.25turn, #6f5eb9, #ebf8e1, #bd74ad);
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    button {
+      background: blueviolet;
+      color: whitesmoke;
+      border: none;
+      border-radius: 10px;
+    }
+
+    h1 {
+      text-align: center;
+      background-color: burlywood;
+    }
+
+    div {
+      margin: auto;
+      width: 16em;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    img {
+      width: 16rem;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Display Image</h1>
+  <div>
+    <button onclick="show()" class="show">Click to show image</button>
+    <button onclick="hide()" class="hidden hide">Click to hide image</button>
+    <img src="https://upload.wikimedia.org/wikipedia/it/f/f0/Screenshot_Videoclip_Never_Gonna_Give_You_Up.png"
+      alt="rick" class="hidden image">
+    <p class="hidden text">Done by Lee Jun Wei</p>
+  </div>
+  <script>
+    const image = document.querySelector(".image");
+    const text = document.querySelector(".text");
+    const showBtn = document.querySelector(".show");
+    const hideBtn = document.querySelector(".hide");
+
+    const show = function () {
+      image.classList.remove("hidden");
+      text.classList.remove("hidden");
+      showBtn.classList.add("hidden");
+      // hideBtn.classList.remove("hidden");
+    }
+
+    const hide = function () {
+      image.classList.add("hidden");
+      text.classList.add("hidden");
+      showBtn.classList.remove("hidden");
+      hideBtn.classList.add("hidden");
+    }
+  </script>
+</body>
+
+</html>
