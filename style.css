@@ -33,8 +33,29 @@ summary {
     justify-content: center;
 }
 
-.release-text {
+.release-text,
+.collated {
     text-align: center;
+}
+
+.complete-download-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.collated {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #e599f7;
+    color: black;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 200ms;
+}
+
+.collated:hover {
+    background-color: #eebefa;
 }
 
 .apple,
