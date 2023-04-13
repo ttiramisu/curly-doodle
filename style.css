@@ -18,6 +18,10 @@ a {
     margin-top: 0.2rem;
 }
 
+details:hover {
+    cursor: pointer;
+}
+
 summary {
     font-weight: bold;
 }
