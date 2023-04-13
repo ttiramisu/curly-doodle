@@ -1,38 +1,46 @@
-h1,
-a,
-p {
-    color: white;
+body {
+    font-family: sans-serif;
+    position: relative;
 }
 
-p {
+.welcome {
     text-align: center;
 }
 
+.welcome-msg {
+    font-size: 3.2rem;
+}
 
 a {
     display: block;
-    font-size: 1.2rem;
     text-decoration: none;
-    line-height: 150%;
+    color: black;
+    margin-top: 0.2rem;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    column-gap: 2rem;
-    z-index: 999999;
+summary {
+    font-weight: bold;
 }
 
-main {
-    margin-top: 2rem;
-    margin-bottom: 5rem;
-}
-
-body {
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+.release-container {
     display: flex;
-    font-family: 'Anton', sans-serif;
+    gap: 4rem;
+    align-items: start;
     justify-content: center;
-    align-items: center;
+}
+
+.release-text {
+    text-align: center;
+}
+
+.apple,
+.mango,
+.pineapple {
+    display: inline-block;
+}
+
+.copyright {
+    position: absolute;
+    bottom: -10rem;
+    left: 0;
 }
