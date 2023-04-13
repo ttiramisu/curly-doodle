@@ -32,3 +32,5 @@ See also the list of <a href="https://github.com/JIN-ZIJIE/curly-doodle/graphs/c
 
 ## license
 <li>MIT License</li>
+
+please give us a star if you find this useful
