@@ -1,174 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="this website contains code for ur revision in the infocomm exam"
+    />
+    <title>Code Storage</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="this website contains code for ur revision in the infocomm exam">
-  <title>Code Storage</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        position: relative;
+      }
 
-  <style>
-    body {
-      font-family: sans-serif;
-      position: relative;
-    }
+      .welcome {
+        text-align: center;
+      }
 
-    .welcome {
-      text-align: center;
-    }
+      .welcome-msg {
+        font-size: 3.2rem;
+      }
 
-    .welcome-msg {
-      font-size: 3.2rem;
-    }
+      a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        margin-top: 0.2rem;
+      }
 
-    a {
-      display: block;
-      text-decoration: none;
-      color: black;
-      margin-top: 0.2rem;
-    }
+      details:hover {
+        cursor: pointer;
+      }
 
-    details:hover {
-      cursor: pointer;
-    }
+      summary {
+        font-weight: bold;
+      }
 
-    summary {
-      font-weight: bold;
-    }
+      .release-container {
+        display: flex;
+        gap: 4rem;
+        align-items: start;
+        justify-content: center;
+      }
 
-    .release-container {
-      display: flex;
-      gap: 4rem;
-      align-items: start;
-      justify-content: center;
-    }
+      .release-text,
+      .collated {
+        text-align: center;
+      }
 
-    .release-text,
-    .collated {
-      text-align: center;
-    }
+      .complete-download-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-    .complete-download-link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+      .collated {
+        display: inline-block;
+        padding: 1rem 2rem;
+        background-color: #e599f7;
+        color: black;
+        font-weight: bold;
+        border-radius: 8px;
+        transition: all 200ms;
+      }
 
-    .collated {
-      display: inline-block;
-      padding: 1rem 2rem;
-      background-color: #e599f7;
-      color: black;
-      font-weight: bold;
-      border-radius: 8px;
-      transition: all 200ms;
-    }
+      .collated:hover {
+        background-color: #eebefa;
+      }
 
-    .collated:hover {
-      background-color: #eebefa;
-    }
+      .apple,
+      .mango,
+      .pineapple {
+        display: inline-block;
+      }
 
-    .apple,
-    .mango,
-    .pineapple {
-      display: inline-block;
-    }
+      .copyright {
+        position: absolute;
+        bottom: -10rem;
+        left: 0;
+      }
+    </style>
+  </head>
 
-    .copyright {
-      position: absolute;
-      bottom: -10rem;
-      left: 0;
-    }
-  </style>
-</head>
-
-<body>
-  <main>
-    <div class="welcome">
-      <h1 class="welcome-msg">Welcome To Our Website</h1>
-      <p>This webiste contains code to all current assignments. It will be taken down 5 hours after the infocomm exam
-        ends. This website is <b>STRICTLY</b> for <b>REFERENCE</b> only. Any harm that you recieve/get when using the
-        website
-        shall not be blamed on the maintaners/makers of the website.</p>
-    </div>
-
-    <section class="releases">
-      <h3 class="release-text">Releases:</h3>
-      <div class="release-container">
-        <div class="apple">
-          <details>
-            <summary>Apple</summary>
-            <a href="calculator/aboutme.html" download>About me</a>
-            <a href="calculator/calc copy.html" download>Calc Copy</a>
-            <a href="calculator/calc v2.html" download>Calc v2</a>
-            <a href="calculator/calc.html" download>Calc</a>
-            <a href="calculator/classlist2.html" download>Classlist</a>
-            <a href="calculator/heroes.html" download>Heroes</a>
-            <a href="calculator/links.html" download>Link</a>
-            <a href="calculator/pacman.html" download>Pacman</a>
-            <a href="calculator/pokemon.html" download>Pokemon</a>
-            <a href="calculator/pokemon2.html" download>Pokemon 2</a>
-            <a href="calculator/pokemon3.html" download>Pokemon 3</a>
-            <a href="calculator/positioning.html" download>Positioning</a>
-            <a href="calculator/positioning2.html" download>Positioning 2</a>
-            <a href="calculator/romans.html" download>Romans</a>
-            <a href="calculator/selectors.html" download>Selectors</a>
-            <a href="calculator/shape.html" download>Shape</a>
-            <a href="calculator/show_image.html" download>Show image</a>
-            <a href="calculator/show_image copy.html" download>Show image</a>
-            <a href="calculator/apple.zip" download>Download All</a>
-          </details>
-        </div>
-
-        <div class="mango">
-          <details>
-            <summary>Mango</summary>
-            <a href="IF/calculator.html" download>Calculator</a>
-            <a href="IF/calculator v2.0.html" download>Calculator v2</a>
-            <a href="IF/classlist.html" download>Classlist</a>
-            <a href="IF/heroes.html" download>Heroes</a>
-            <a href="IF/pacman.html" download>Pacman</a>
-            <a href="IF/pokemon.html" download>Pokemon</a>
-            <a href="IF/positioning.html" download>Positioning</a>
-            <a href="IF/show_image.html" download>Show Image</a>
-            <a href="IF/mango.zip" download>Download All</a>
-          </details>
-        </div>
-
-        <div class="pineapple">
-          <details>
-            <summary>Grape</summary>
-            <a href="pineapple/aboutme.html" download>About Me</a>
-            <a href="pineapple/calc-v2.html" download>Calculator v2</a>
-            <a href="pineapple/calc.html" download>Calculator</a>
-            <a href="pineapple/classlist.html" download>Classlist</a>
-            <a href="pineapple/covid.html" download>Covid</a>
-            <a href="pineapple/heroes.html" download>Heores</a>
-            <a href="pineapple/links.html" download>Links</a>
-            <a href="pineapple/list.html" download>List</a>
-            <a href="pineapple/pokemon.html" download>Pokemon</a>
-            <a href="pineapple/pokemonv2.html" download>Pokemon</a>
-            <a href="pineapple/pokemonv3.html" download>Pokemon</a>
-            <a href="pineapple/position.html" download>Positioning</a>
-            <a href="pineapple/romans.html" download>Romans</a>
-            <a href="pineapple/selectors.html" download>Selectors</a>
-            <a href="pineapple/shape.html" download>Pacman</a>
-            <a href="pineapple/show_img.html" download>Show Image</a>
-            <a href="pineapple/table.html" download>Table</a>
-            <a href="pineapple/grape.zip" download>Download All</a>
-          </details>
-        </div>
+  <body>
+    <main>
+      <div class="welcome">
+        <h1 class="welcome-msg">Welcome To Our Website</h1>
+        <p>
+          This webiste contains code to all current assignments. It will be
+          taken down 5 hours after the infocomm exam ends. This website is
+          <b>STRICTLY</b> for <b>REFERENCE</b> only. Any harm that you
+          recieve/get when using the website shall not be blamed on the
+          maintaners/makers of the website.
+        </p>
       </div>
-      <br>
-      <div class="complete-download-link">
-        <a href="collated.zip" class="collated">Download complete source code</a>
-      </div>
-    </section>
-  </main>
-  <div class="copyright">
-    Copyright UNKNOWN INC., all rights reserved
-  </div>
-</body>
 
+      <section class="releases">
+        <h3 class="release-text">Releases:</h3>
+        <div class="release-container">
+          <div class="apple">
+            <details>
+              <summary>Apple</summary>
+              <a href="calculator/aboutme.html" download>About me</a>
+              <a href="calculator/calc copy.html" download>Calc Copy</a>
+              <a href="calculator/calc v2.html" download>Calc v2</a>
+              <a href="calculator/calc.html" download>Calc</a>
+              <a href="calculator/classlist2.html" download>Classlist</a>
+              <a href="calculator/heroes.html" download>Heroes</a>
+              <a href="calculator/links.html" download>Link</a>
+              <a href="calculator/pacman.html" download>Pacman</a>
+              <a href="calculator/pokemon.html" download>Pokemon</a>
+              <a href="calculator/pokemon2.html" download>Pokemon 2</a>
+              <a href="calculator/pokemon3.html" download>Pokemon 3</a>
+              <a href="calculator/positioning.html" download>Positioning</a>
+              <a href="calculator/positioning2.html" download>Positioning 2</a>
+              <a href="calculator/romans.html" download>Romans</a>
+              <a href="calculator/selectors.html" download>Selectors</a>
+              <a href="calculator/shape.html" download>Shape</a>
+              <a href="calculator/show_image.html" download>Show image</a>
+              <a href="calculator/show_image copy.html" download>Show image</a>
+              <strong
+                ><a href="calculator/apple.zip" download
+                  >Download All</a
+                ></strong
+              >
+            </details>
+          </div>
+
+          <div class="mango">
+            <details>
+              <summary>Mango</summary>
+              <a href="IF/calculator.html" download>Calculator</a>
+              <a href="IF/calculator v2.0.html" download>Calculator v2</a>
+              <a href="IF/classlist.html" download>Classlist</a>
+              <a href="IF/heroes.html" download>Heroes</a>
+              <a href="IF/pacman.html" download>Pacman</a>
+              <a href="IF/pokemon.html" download>Pokemon</a>
+              <a href="IF/positioning.html" download>Positioning</a>
+              <a href="IF/show_image.html" download>Show Image</a>
+              <strong><a href="IF/mango.zip" download>Download All</a></strong>
+            </details>
+          </div>
+
+          <div class="pineapple">
+            <details>
+              <summary>Grape</summary>
+              <a href="pineapple/aboutme.html" download>About Me</a>
+              <a href="pineapple/calc-v2.html" download>Calculator v2</a>
+              <a href="pineapple/calc.html" download>Calculator</a>
+              <a href="pineapple/classlist.html" download>Classlist</a>
+              <a href="pineapple/covid.html" download>Covid</a>
+              <a href="pineapple/heroes.html" download>Heores</a>
+              <a href="pineapple/links.html" download>Links</a>
+              <a href="pineapple/list.html" download>List</a>
+              <a href="pineapple/pokemon.html" download>Pokemon</a>
+              <a href="pineapple/pokemonv2.html" download>Pokemon</a>
+              <a href="pineapple/pokemonv3.html" download>Pokemon</a>
+              <a href="pineapple/position.html" download>Positioning</a>
+              <a href="pineapple/romans.html" download>Romans</a>
+              <a href="pineapple/selectors.html" download>Selectors</a>
+              <a href="pineapple/shape.html" download>Pacman</a>
+              <a href="pineapple/show_img.html" download>Show Image</a>
+              <a href="pineapple/table.html" download>Table</a>
+              <strong
+                ><a href="pineapple/grape.zip" download>Download All</a></strong
+              >
+            </details>
+          </div>
+        </div>
+        <br />
+        <div class="complete-download-link">
+          <a href="collated.zip" class="collated"
+            >Download complete source code</a
+          >
+        </div>
+      </section>
+    </main>
+    <div class="copyright">Copyright UNKNOWN INC., all rights reserved</div>
+  </body>
 </html>
