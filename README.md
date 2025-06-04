@@ -17,7 +17,7 @@ We are a group of students from Singapore who are helping you guys revise for yo
 Copyright (C) 2023
 
 <li>
-  <a href="https://github.com/JIN-ZIJIE">JIN-ZIJIE</a> - <i>for the code in the website</i>
+  <a href="https://github.com/ttiramisu">ttiramisu</a> - <i>for the code in the website</i>
 </li>
 
 <li>
